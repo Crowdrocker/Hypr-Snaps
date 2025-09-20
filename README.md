@@ -380,4 +380,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 </div>
 ## 🫰	Thank you for the stars 🩷
-[![Stargazers over time](https://starchart.cc/Crowdrocker/Snaps-Dots.svg?variant=adaptive)](https://starchart.cc/Crowdrocker/Snaps-Dots)
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Crowdrocker/Hypr-Snaps.git&type=Date)](https://www.star-history.com/#Crowdrocker/Hypr-Snaps.git&Date)
