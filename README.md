@@ -45,9 +45,27 @@
 
 </div>
 
----
+# 🎬 Snaps-Dots - WehttamSnaps J.A.R.V.I.S. Configuration
 
-## 🌟 Features
+<div align="center">
+  
+![WehttamSnaps Logo](screenshots/logo.png)
+
+**A complete Arch Linux Hyprland configuration for Photography • Gaming • Streaming**
+
+[![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?logo=arch-linux&logoColor=white)](https://archlinux.org/)
+[![Hyprland](https://img.shields.io/badge/Hyprland-00D9FF?logo=wayland&logoColor=white)](https://hyprland.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+*Matthew's (WehttamSnaps) complete workstation setup with J.A.R.V.I.S. theming*
+
+[🚀 Quick Install](#-quick-installation) • [📸 Screenshots](#-screenshots) • [⌨️ Keybinds](#-keybindings) • [🎮 Gaming](#-gaming-setup) • [🎵 Audio](#-audio-setup)
+
+</div>
+
+---
+<a id="Features"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=Features" width="450"/>
 
 ### 🎨 **Visual Design**
 - **J.A.R.V.I.S. inspired theme** with violet-to-cyan gradients
@@ -95,8 +113,8 @@
 | **Storage** | 20GB+ free space | ✅ |
 
 ---
-
-## 🚀 Quick Installation
+<a id="🚀 Quick Installation"></a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=🚀 Quick Installation" width="450"/>
 
 ### Method 1: Automated Setup (Recommended)
 ```bash
