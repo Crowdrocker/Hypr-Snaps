@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="Adw" version="1.0"/>
+  <template class="DotfilesSidebarWindow" parent="AdwApplicationWindow">
+    <property name="title" translatable="yes">ML4W Sidebar</property>
+    <property name="default-width">400</property>
+    <property name="default-height">700</property>
+    <property name="resizable">true</property>
+    <property name="content">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="AdwHeaderBar">
+            <child type="start">
+              <object class="GtkButton">
+                <property name="icon-name">dark-mode-symbolic</property>
+                <property name="action-name">app.toggle_theme</property>
+              </object>
+            </child>
+            <child type="start">
+              <object class="GtkButton">
+                <property name="icon-name">gtk-color-picker-symbolic</property>
+                <property name="action-name">app.picker</property>
+              </object>
+            </child>
+            <child type="start">
+              <object class="GtkMenuButton">
+                <property name="icon-name">smile-symbolic</property>
+                <property name="popover">
+                  <object class="GtkEmojiChooser" id="emoji_chooser"></object>
+                </property>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="primary">True</property>
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="tooltip-text" translatable="yes">Main Menu</property>
+                <property name="menu-model">primary_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <property name="content">
+          <object class="AdwClamp">
+            <property name="maximum-size">360</property>
+            <child>
+              <object class="GtkBox">
+                <property name="margin-bottom">30</property>
+                <property name="orientation">1</property>
+
+                <!-- ML4W Logo -->
+                <child>
+                  <object class="GtkImage">
+                    <property name="name">logo</property>
+                    <property name="icon-name">com.ml4w.welcome</property>
+                    <property name="pixel-size">98</property>
+                    <property name="margin-bottom">30</property>
+                    <property name="margin-top">10</property>
+                    <style>
+                      <class name="icon-dropshadow"/>
+                    </style>
+                  </object>
+                </child>
+                <!-- ML4W Logo -->
+
+                <child>
+                  <object class="GtkBox">
+                    <property name="orientation">0</property>
+                    <property name="halign">3</property>
+                    <property name="spacing">10</property>
+                    <property name="margin-bottom">20</property>
+                    <property name="homogeneous">true</property>
+
+                    <!-- Shortcut Button -->
+                    <child>
+                      <object class="GtkButton">
+                        <property name="label">Welcome</property>
+                        <property name="action-name">app.welcome</property>
+                      </object>
+                    </child>
+                    <!-- Shortcut Buttons -->
+
+                    <!-- Shortcut Button -->
+                    <child>
+                      <object class="GtkButton">
+                        <property name="label">Settings</property>
+                        <property name="action-name">app.settings</property>
+                      </object>
+                    </child>
+                    <!-- Shortcut Buttons -->
+
+                    <!-- Shortcut Button -->
+                    <child>
+                      <object class="GtkButton">
+                        <property name="label">Hyprland</property>
+                        <property name="action-name">app.hyprland</property>
+                      </object>
+                    </child>
+                    <!-- Shortcut Buttons -->
+
+                  </object>
+                </child>
+
+                <child>
+                  <object class="GtkListBox">
+                    <property name="selection-mode">0</property>
+                    <property name="margin-bottom">20</property>
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+
+                    <child>
+                      <object class="AdwSwitchRow" id="waybar_toggle">
+                        <property name="title">Waybar</property>
+                        <child type="suffix">
+                          <object class="GtkMenuButton">
+                            <property name="valign">3</property>
+                            <property name="icon-name">settings</property>
+                            <property name="menu-model">run_waybar_menu</property>
+                            <style>
+                              <class name="circular"/>
+                              <class name="flat"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwSwitchRow" id="dock_toggle">
+                        <property name="title">Dock</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwSwitchRow" id="gamemode_toggle">
+                        <property name="title">Gamemode</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwSwitchRow" id="sidepad_toggle">
+                        <property name="title">Sidepad</property>
+                        <child type="suffix">
+                          <object class="GtkMenuButton">
+                            <property name="valign">3</property>
+                            <property name="icon-name">settings</property>
+                            <property name="menu-model">sidepad_menu</property>
+                            <style>
+                              <class name="circular"/>
+                              <class name="flat"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title">Wallpaper</property>
+                        <child type="suffix">
+                          <object class="AdwSplitButton">
+                            <property name="valign">3</property>
+                            <property name="icon-name">preferences-desktop-wallpaper-symbolic</property>
+                            <property name="action-name">app.wallpaper</property>
+                            <property name="menu-model">run_wallpaper_menu</property>
+                            <style>
+                              <class name="flat"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title">Theme</property>
+                        <child type="suffix">
+                          <object class="AdwSplitButton">
+                            <property name="valign">3</property>
+                            <property name="icon-name">edit-paste-style-symbolic</property>
+                            <property name="action-name">app.theme_gtk</property>
+                            <property name="menu-model">run_theme_menu</property>
+                            <style>
+                              <class name="flat"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow">
+                        <property name="title">Screenshot</property>
+                        <child type="suffix">
+                          <object class="GtkButton">
+                            <property name="valign">3</property>
+                            <property name="icon-name">accessories-screenshot-symbolic</property>
+                            <property name="action-name">app.screenshot</property>
+                            <style>
+                              <class name="circular"/>
+                              <class name="flat"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+
+             </object>
+            </child>
+          </object>
+        </property>
+      </object>
+    </property>
+  </template>
+  <menu id="sidepad_menu">
+    <section>
+      <item>
+        <attribute name="label">Select Sidepad</attribute>
+        <attribute name="action">app.show_sidepad</attribute>
+      </item>
+      <item>
+        <attribute name="label">Open Sidepad folder</attribute>
+        <attribute name="action">app.open_sidepad_folder</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">All Key Bindings</attribute>
+        <attribute name="action">app.keybindings</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">About</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id="run_wallpaper_menu">
+    <section>
+      <item>
+        <attribute name="label">Random Wallpaper</attribute>
+        <attribute name="action">app.wallpaper_random</attribute>
+      </item>
+      <item>
+        <attribute name="label">Wallpaper Effects</attribute>
+        <attribute name="action">app.wallpaper_effects</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id="run_theme_menu">
+    <section>
+      <item>
+        <attribute name="label">Set GTK Theme</attribute>
+        <attribute name="action">app.theme_gtk</attribute>
+      </item>
+      <item>
+        <attribute name="label">Set QT Theme</attribute>
+        <attribute name="action">app.theme_qt</attribute>
+      </item>
+      <item>
+        <attribute name="label">Refresh GTK Theme</attribute>
+        <attribute name="action">app.theme_refresh</attribute>
+      </item>
+    </section>
+  </menu>
+  <menu id="run_waybar_menu">
+    <section>
+      <item>
+        <attribute name="label">Select Waybar Theme</attribute>
+        <attribute name="action">app.waybar_theme</attribute>
+      </item>
+      <item>
+        <attribute name="label">Edit Quicklinks</attribute>
+        <attribute name="action">app.waybar_quicklinks</attribute>
+      </item>
+      <item>
+        <attribute name="label">Reload Waybar</attribute>
+        <attribute name="action">app.waybar_reload</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>
