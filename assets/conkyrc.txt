@@ -1,0 +1,31 @@
+conky.config = {
+    background = true,
+    update_interval = 1,
+    double_buffer = true,
+    no_buffers = true,
+    text_buffer_size = 2048,
+    temperature_unit = 'celsius',
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    alignment = 'top_right',
+    gap_x = 20,
+    gap_y = 40,
+    minimum_width = 200, minimum_height = 100,
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    use_xft = true,
+    font = 'Fira Mono:size=10',
+    default_color = 'white',
+};
+
+conky.text = [[
+${alignc}${font Fira Mono:size=20}${time %H:%M:%S}
+${alignc}${font Fira Mono:size=12}${time %A, %d %B %Y}
+${hr}
+Hostname: $nodename
+Uptime: $uptime
+CPU: ${cpu}%   RAM: ${memperc}%   Disk: ${fs_used_perc /}%
+]];
