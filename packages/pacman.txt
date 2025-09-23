@@ -1,0 +1,42 @@
+# Core desktop
+hyprland
+waybar
+wlroots
+swaylock
+swayidle
+grim
+slurp
+mako
+hyprpaper
+swww
+
+# Audio
+pipewire
+pipewire-pulse
+wireplumber
+qpwgraph
+pavucontrol
+
+# GPU / Gaming
+mesa
+vulkan-radeon
+lib32-mesa
+lib32-vulkan-radeon
+gamemode
+gamescope
+corectrl
+lact
+
+# Utils
+thunar
+zsh
+fastfetch
+btop
+htop
+neofetch
+lm_sensors
+ntfs-3g
+git
+python
+python-pip
+

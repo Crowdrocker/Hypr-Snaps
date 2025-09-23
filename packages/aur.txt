@@ -1,0 +1,12 @@
+# Hyprland bleeding-edge (optional, comment out if you prefer stable)
+hyprland-git
+waybar-hyprland-git
+
+# Theming / extras
+sweet-gtk-theme
+flat-remix-git
+tokyonight-gtk-theme-git
+
+# Tools
+coolercontrol
+
