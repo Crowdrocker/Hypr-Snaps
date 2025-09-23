@@ -1,0 +1,9 @@
+[global]
+font = Roboto 12
+background = "#1a1b26"
+foreground = "#00FFFF"
+border_color = "#8A2BE2"
+width = 300
+height = 80
+corner_radius = 10
+frame_width = 2
