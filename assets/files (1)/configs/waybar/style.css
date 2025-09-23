@@ -1,0 +1,25 @@
+/* Waybar J.A.R.V.I.S. Theme - Violet to Cyan Gradient */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+window {
+  background: linear-gradient(90deg, #8A2BE2 0%, #00FFFF 100%);
+  border-radius: 10px;
+  border: 2px solid #0066CC;
+}
+
+#workspaces button.active {
+  background: #FF69B4;
+  color: #fff;
+}
+
+#custom-jarvis {
+  background: #0066CC;
+  color: #00FFFF;
+  border-radius: 6px;
+  padding: 0 8px;
+}

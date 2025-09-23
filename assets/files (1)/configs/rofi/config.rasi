@@ -1,0 +1,14 @@
+configuration {
+  font: "Roboto 14";
+  location: 0;
+  width: 35;
+  lines: 8;
+  padding: 20;
+  background: #1a1b26ff;
+  border: 2px solid #8A2BE2;
+  border-radius: 12px;
+  color-window: #00FFFF;
+  color-normal: #0066CC, #00FFFF, #FF69B4, #1a1b26, #8A2BE2;
+}
+
+@theme "tokyonight-dark"
