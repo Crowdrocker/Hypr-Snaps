@@ -1,0 +1,24 @@
+{
+    "packages":[
+        {
+            "package":"gum",
+            "test":"gum"
+        },
+        {
+            "package":"figlet",
+            "test":"figlet"
+        },
+        {
+            "package":"wget",
+            "test":"wget"
+        },
+        {
+            "package":"unzip",
+            "test":"unzip"
+        },
+        {
+            "package":"jq",
+            "test":"jq"
+        }
+    ]
+}
