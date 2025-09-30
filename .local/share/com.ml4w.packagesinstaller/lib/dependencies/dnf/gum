@@ -1,1 +1,0 @@
-$pkginst_script_dependencies/dnf/gum.sh &>>$(_getLogFile)

@@ -1,2 +1,0 @@
-# sudo permissions
-sudo -v

@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=com.ml4w.sidebar
-Exec=@bindir@/dotfiles-sidebar --gapplication-service
