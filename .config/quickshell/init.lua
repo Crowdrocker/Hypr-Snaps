@@ -1,76 +1,90 @@
--- WehttamSnaps Quickshell Bar - J.A.R.V.I.S. Enhanced
--- Newbie Edit: Add/remove buttons in launchers. Reload: hyprctl reload
+-- WehttamSnaps Quickshell: Bar + Widgets
+-- Reload: hyprctl reload or killall quickshell && quickshell
+-- To add: Uncomment lines, edit paths. Theme: Violet-Cyan gradient.
 
 local quickshell = require("quickshell")
-local widgets = quickshell.widgets
+local widgets = require("widgets")  -- Your ~/scripts/quickshell-widgets.lua (below)
 
--- Bar (Bottom, violet-cyan gradient)
-local bar = quickshell.host.bars({
-    edges = { "bottom" },
-    layer = "top",
-    properties = {
-        width = "100%",
-        height = 30,
-        background = { bg = "#8A2BE2aa" },  -- Violet base
-        border = { radius = 10, color = "#00FFFF" },  # Cyan accent
+-- Bar Setup (Bottom, smooth animations, brand colors)
+local bar = quickshell.shelfs:make_bottom_bar({
+    widgets = {
+        widgets.work_launcher,  -- Work buttons
+        quickshell.modules.text({ text = " | " }),
+        widgets.gaming_launcher,  -- Gaming buttons
+        quickshell.modules.text({ text = " | WehttamSnaps" }),
+        quickshell.modules.workarea(),  -- Workspaces
+        quickshell.modules.systray(),
+        widgets.temp_monitor,  -- GPU/CPU temp (for cooling)
     },
-    contents = {
-        widgets.spacer(10),
-        widgets.button({
-            text = "WehttamSnaps",  # Brand
-            on_click = function() quickshell.run("brave --new-tab https://twitch.tv/wehttamsnaps") end,
-            style = { fg = "#00FFFF", font = "Sans Bold 12" },
-        }),
-        widgets.spacer(20),
-        -- Work Widgets (Draggable)
-        widgets.button({ text = "Discord", on_click = function() quickshell.run("discord") end }),
-        widgets.button({ text = "GIMP", on_click = function() quickshell.run("gimp") end }),
-        widgets.button({ text = "Krita", on_click = function() quickshell.run("krita") end }),
-        widgets.button({ text = "Inkscape", on_click = function() quickshell.run("inkscape") end }),
-        widgets.spacer(40),
-        -- Gaming Widgets
-        widgets.button({ text = "Steam", on_click = function() quickshell.run("steam") end }),
-        widgets.button({ text = "Lutris", on_click = function() quickshell.run("lutris") end }),
-        widgets.button({ text = "Heroic", on_click = function() quickshell.run("heroic") end }),
-        widgets.button({ text = "OBS", on_click = function() quickshell.run("obs") end }),
-        widgets.button({ text = "Spotify", on_click = function() quickshell.run("spotify") end }),
-        widgets.spacer(20),
-        -- System Widgets (Draggable, easy add)
-        widgets.workspaces(),
-        widgets.spacer(10),
-        widgets.systray(),
-        widgets.clock({ format = "%H:%M", style = { fg = "#FF69B4" } }),  # Hot pink
-        widgets.battery({ style = { fg = "#0066CC" } }),  # Deep blue
-        widgets.pulseaudio({ style = { fg = "#00FFFF" } }),
-        widgets.spacer(10),
-        widgets.button({
-            text = "Power", on_click = function() quickshell.run("~/.config/hypr/scripts/power-menu.sh") end,
-            style = { fg = "#FF69B4" },
-        }),
+    style = {
+        background = "linear-gradient(to right, #8A2BE2, #00FFFF)",  -- Brand
+        padding = 10,
+        border_radius = 10,
+        animation = { speed = 15 },  -- Smooth
     },
 })
 
--- Gaming Mode Toggle Widget (Draggable sidebar on hover)
-local gaming_widget = widgets.button({
-    text = "Gaming Mode",
-    on_click = function()
-        quickshell.run("gamemoderun %")  -- Activates on game start
-        quickshell.play_sound("~/.local/share/sounds/jarvis-gaming.mp3")
+-- J.A.R.V.I.S. Themed: Add sound on hover/click
+bar:on_enter(function() os.execute("paplay ~/.sounds/jarvis-notification.mp3") end)
+
+-- Load widgets (modular)
+bar:load()
+
+-- Sidebars (From ArchEclipse-inspired, optional)
+local sidebar_work = quickshell.windows:make_window({ layer = "overlay", sidebar = true })
+sidebar_work:load(widgets.work)  -- Load work panel
+```
+**widgets.lua** (`~/.config/quickshell/widgets.lua`—source in init.lua):
+```lua
+-- Modular Widgets (Toggle with -- comments)
+local widgets = {}
+
+-- Gaming Launcher (Buttons + FPS)
+widgets.gaming_launcher = function()
+    local launcher = quickshell.modules.horizontal_box({
+        children = {
+            quickshell.modules.button({ text = "🎮 Steam", on_click = function() os.execute("gamemoderun steam") end }),
+            quickshell.modules.button({ text = "📺 Twitch", on_click = function() os.execute("brave https://twitch.tv/wehttamsnaps") end }),
+            quickshell.modules.button({ text = "🎲 Lutris", on_click = function() os.execute("lutris") end }),
+            quickshell.modules.button({ text = "🦸 Heroic", on_click = function() os.execute("heroic") end }),
+            quickshell.modules.button({ text = "🎵 Spotify", on_click = function() os.execute("spotify") end }),  -- Or webapp
+            -- FPS Monitor (via MangoHud pipe)
+            quickshell.modules.text({ text = "FPS: ", poll = "mangohud --dlsym --pid $(pgrep -f game)" }),  -- Newbie: Toggle poll=false
+        },
+        -- Gaming mode trigger
+        on_click = function() os.execute("~/.scripts/jarvis-sounds.sh gaming; hyprctl dispatch workspace 6") end,  -- Switch to gaming WS
+    })
+    return launcher
+end
+
+-- Work Launcher (Shortcuts + Mount drive)
+widgets.work_launcher = function()
+    local launcher = quickshell.modules.horizontal_box({
+        children = {
+            quickshell.modules.button({ text = "🖼️ Inkscape", on_click = function() os.execute("inkscape") end }),
+            quickshell.modules.button({ text = "💬 Discord", on_click = function() os.execute("discord") end }),
+            quickshell.modules.button({ text = "🎨 Krita", on_click = function() os.execute("krita") end }),
+            quickshell.modules.button({ text = "🖌️ GIMP", on_click = function() os.execute("gimp") end }),
+            quickshell.modules.button({ text = "📁 Mount Photos", on_click = function() os.execute("udisksctl mount -b /dev/sdX1") end }),  -- 1TB SSD
+            -- -- Optional: Webapps (YouTube/Twitch/Instagram/AI)
+            -- quickshell.modules.button({ text = "📹 YouTube", on_click = function() os.execute("brave https://youtube.com") end }),
+        },
+        on_click = function() os.execute("hyprctl dispatch workspace 1") end,  # Work WS
+    })
+    return launcher
+end
+
+-- Temp Monitor (GPU/CPU for cooling alerts)
+widgets.temp_monitor = quickshell.modules.text({
+    text = "Temp: ",
+    poll = "sensors | grep 'amdgpu' | awk '{print $2}'",  # AMD GPU
+    style = { color = "#FF69B4" },  -- Hot pink warning
+    on_update = function(value)
+        if value > 80 then os.execute("~/.scripts/jarvis-sounds.sh warning") end
     end,
-    properties = { visible = false },  -- Show on WS2
 })
 
--- Work Launcher (Separate draggable panel)
-local work_launcher = widgets.panel({
-    anchor = "left", width = 200, height = "100%",
-    contents = {
-        widgets.heading("Work - WehttamSnaps"),
-        widgets.button({ text = "Photos (/run/media/...)", on_click = function() quickshell.run("thunar /run/media/wehttamsnaps/LINUXDRIVE-1") end }),
-        widgets.button({ text = "YouTube Studio", on_click = function() quickshell.run("brave https://studio.youtube.com") end }),
-        widgets.button({ text = "Twitch Dashboard", on_click = function() quickshell.run("brave https://dashboard.twitch.tv") end }),
-        -- Add more: e.g., widgets.webapp("Instagram", "https://instagram.com")
-    },
-    style = { background = "#0066CCaa" },  # Deep blue
-})
+-- Full sidebar for work (Toggle with keybind)
+widgets.work = quickshell.modules.vertical_box({ children = { widgets.work_launcher() } })
 
-quickshell.host:run()
+return widgets
