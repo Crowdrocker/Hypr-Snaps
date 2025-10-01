@@ -1,0 +1,16 @@
+# WehttamSnaps Gaming Launch Options
+
+# Cyberpunk 2077
+gamemoderun %command% --launcher-skip
+
+# Fallout 4  
+gamemoderun %command% -skip-launcher
+
+# The Division 2
+gamemoderun %command% -skipintro -disablepagefilecheck
+
+# Warframe
+gamemoderun %command% -cluster:public -language:en -graphicsDriver:dx11
+
+# General optimizations for all games
+# Add: gamemoderun %command%
