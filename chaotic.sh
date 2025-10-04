@@ -35,4 +35,4 @@ curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 
-sudo pacman -Syyu && sudo pacman -Syu
+sudo pacman -Syyu && sudo pacman -Scc && sudo pacman -Rns $(pacman -Qdtq) && yay -Scc && sudo fc-cache -r -v
