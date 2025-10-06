@@ -1,0 +1,57 @@
+// ────────────── Window Rules ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
+
+    window-rule {
+        match at-startup=true app-id="vesktop"
+        open-on-workspace "chat"
+        open-maximized true
+    }
+
+    window-rule {
+        match app-id="brave"
+        open-on-workspace "browser"
+        open-maximized true
+    }
+
+    window-rule {
+        match app-id=r#"brave$"# title="^Picture-in-Picture$"
+        open-floating true // Always float Firefox PiP windows
+    }
+
+    window-rule {
+        geometry-corner-radius 20 // Set every window radius to 20
+        clip-to-geometry true
+    }
+
+    // Window rules
+    window-rule {
+        match app-id="steam"
+        open-on-workspace 5
+    }
+
+    window-rule {
+        match app-id="discord"
+        open-on-workspace 3
+    }
+
+    window-rule {
+        match app-id="obs"
+        open-on-workspace 8
+    }
+
+// ────────────── Layer Rules ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Layer-Rules
+
+    layer-rule {
+        match namespace="^swww-daemon$"
+        place-within-backdrop true
+    }
+
+    layer-rule {
+        match namespace="^quickshell-wallpaper$"
+    }
+
+    layer-rule {
+        match namespace="^quickshell-overview$"
+        place-within-backdrop true
+    }
