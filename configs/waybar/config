@@ -1,0 +1,51 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "spacing": 4,
+    
+    "modules-left": ["hyprland/workspaces", "custom/jarvis"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "disk", "pulseaudio", "battery", "tray"],
+    
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "format-icons": {
+            "1": "",
+            "2": "", 
+            "3": "",
+            "4": "",
+            "5": ""
+        }
+    },
+    
+    "custom/jarvis": {
+        "format": "J.A.R.V.I.S.",
+        "tooltip": false,
+        "on-click": "bash ~/.local/bin/jarvis-status.sh"
+    },
+    
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+    
+    "memory": {
+        "format": " {}%",
+        "tooltip": false
+    },
+    
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol"
+    }
+}
