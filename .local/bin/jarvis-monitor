@@ -1,0 +1,30 @@
+#!/bin/bash
+# J.A.R.V.I.S. System Monitor
+
+SOUND_DIR="$HOME/.config/sounds"
+TEMP_THRESHOLD=75
+DISK_THRESHOLD=90
+
+while true; do
+    # Check CPU temperature
+    CPU_TEMP=$(sensors | grep 'Package id 0:' | awk '{print $4}' | tr -d '+°C')
+    
+    if (( $(echo "$CPU_TEMP > $TEMP_THRESHOLD" | bc -l) )); then
+        if [ -f "$SOUND_DIR/jarvis-warning.mp3" ]; then
+            mpv --no-video "$SOUND_DIR/jarvis-warning.mp3" &
+        fi
+        notify-send -u critical "J.A.R.V.I.S. Warning" "CPU temperature critical: ${CPU_TEMP}°C"
+    fi
+    
+    # Check disk space
+    DISK_USAGE=$(df -h / | tail -1 | awk '{print $5}' | tr -d '%')
+    
+    if [ "$DISK_USAGE" -gt "$DISK_THRESHOLD" ]; then
+        if [ -f "$SOUND_DIR/jarvis-warning.mp3" ]; then
+            mpv --no-video "$SOUND_DIR/jarvis-warning.mp3" &
+        fi
+        notify-send -u critical "J.A.R.V.I.S. Warning" "Disk space critical: ${DISK_USAGE}% used"
+    fi
+    
+    sleep 300  # Check every 5 minutes
+done

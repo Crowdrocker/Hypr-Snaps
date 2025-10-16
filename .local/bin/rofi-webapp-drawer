@@ -1,0 +1,19 @@
+#!/bin/bash
+# VOS Desktop Web App Drawer
+# GitHub: https://github.com/Crowdrocker
+
+# Get list of web apps
+webapps=$(find "$HOME/.local/share/applications" -name "*-webapp.desktop" -exec basename {} .desktop \; | sort)
+
+if [[ -z "$webapps" ]]; then
+    notify-send "VOS Desktop" "No web applications found"
+    exit 1
+fi
+
+# Create rofi menu
+selected=$(echo "$webapps" | rofi -dmenu -i -p "Web Apps" -theme-str 'window {width: 400px;}')
+
+if [[ -n "$selected" ]]; then
+    # Launch the selected web app
+    gtk-launch "$selected" || "$HOME/.local/bin/$selected"
+fi

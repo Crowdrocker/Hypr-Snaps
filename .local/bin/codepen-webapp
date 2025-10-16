@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - CodePen Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://codepen.io" --class="codepen-webapp" --name="codepen-webapp" "$@"

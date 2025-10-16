@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Netflix
+Comment=Netflix Web Application
+Exec=chromium --app="https://netflix.com" --class="netflix-webapp" --name="netflix-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=netflix-webapp
+Keywords=Netflix;webapp;

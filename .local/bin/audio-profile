@@ -1,0 +1,21 @@
+#!/bin/bash
+# WehttamSnaps Audio Profile Switcher
+
+case "$1" in
+    gaming)
+        qpwgraph -a ~/.config/qpwgraph/gaming.qpwgraph
+        notify-send "Audio Profile" "Gaming profile activated"
+        ;;
+    streaming)
+        qpwgraph -a ~/.config/qpwgraph/streaming.qpwgraph
+        notify-send "Audio Profile" "Streaming profile activated"
+        ;;
+    work)
+        qpwgraph -a ~/.config/qpwgraph/work.qpwgraph
+        notify-send "Audio Profile" "Work profile activated"
+        ;;
+    *)
+        echo "Usage: audio-profile {gaming|streaming|work}"
+        exit 1
+        ;;
+esac

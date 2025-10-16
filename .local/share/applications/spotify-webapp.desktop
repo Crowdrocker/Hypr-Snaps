@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Spotify
+Comment=Spotify Web Application
+Exec=chromium --app="https://open.spotify.com" --class="spotify-webapp" --name="spotify-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=spotify-webapp
+Keywords=Spotify;webapp;

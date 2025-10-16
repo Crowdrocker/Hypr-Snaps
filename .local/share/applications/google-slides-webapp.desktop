@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Google Slides
+Comment=Google Slides Web Application
+Exec=chromium --app="https://slides.google.com" --class="google-slides-webapp" --name="google-slides-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=google-slides-webapp
+Keywords=Google Slides;webapp;

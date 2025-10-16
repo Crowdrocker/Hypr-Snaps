@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=CodePen
+Comment=CodePen Web Application
+Exec=chromium --app="https://codepen.io" --class="codepen-webapp" --name="codepen-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=codepen-webapp
+Keywords=CodePen;webapp;

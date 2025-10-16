@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Google Slides Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://slides.google.com" --class="google-slides-webapp" --name="google-slides-webapp" "$@"

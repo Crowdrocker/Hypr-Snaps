@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Canva Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://canva.com" --class="canva-webapp" --name="canva-webapp" "$@"

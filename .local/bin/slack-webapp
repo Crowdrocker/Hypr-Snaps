@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Slack Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://app.slack.com/client" --class="slack-webapp" --name="slack-webapp" "$@"

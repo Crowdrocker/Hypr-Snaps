@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Discord
+Comment=Discord Web Application
+Exec=chromium --app="https://discord.com/app" --class="discord-webapp" --name="discord-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=discord-webapp
+Keywords=Discord;webapp;

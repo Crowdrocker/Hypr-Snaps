@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Netflix Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://netflix.com" --class="netflix-webapp" --name="netflix-webapp" "$@"

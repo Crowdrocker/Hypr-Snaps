@@ -1,0 +1,12 @@
+╦ ╦┌─┐┬ ┬┌┬┐┌┬┐┌─┐┌┬┐╔═╗┌┐┌┌─┐┌─┐┌─┐
+║║║├┤ ├─┤ │  │ ├─┤│││╚═╗│││├─┤├─┘└─┐
+╚╩╝└─┘┴ ┴ ┴  ┴ ┴ ┴┴ ┴╚═╝┘└┘┴ ┴┴  └─┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    Arch Linux Hyprland Setup by Matthew (Crowdrocker)
+    Photography • Gaming • Streaming • Content Creation
+    
+    GitHub: https://github.com/Crowdrocker/Hypr-Snaps
+    Twitch: https://twitch.tv/WehttamSnaps
+    YouTube: https://youtube.com/@WehttamSnaps
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -1,0 +1,73 @@
+.
+├── My-Hyprland-Setup-Idea.md
+├── Noctalia-Docs.txt
+├── PROJECT_STRUCTURE.txt
+├── README.md
+├── SUMMARY.md
+├── apps
+│   ├── power-menu
+│   ├── settings
+│   └── welcome
+│       └── welcome-app.py
+├── assets
+│   ├── icons
+│   ├── logos
+│   │   └── logo.txt
+│   ├── sounds
+│   └── wallpapers
+├── configs
+│   ├── audio
+│   ├── gaming
+│   ├── hyprland
+│   │   ├── env.conf
+│   │   ├── hyprland.conf
+│   │   ├── keybinds.conf
+│   │   ├── monitors.conf
+│   │   ├── startup.conf
+│   │   └── windowrules.conf
+│   ├── noctalia
+│   └── terminal
+│       └── fastfetch
+├── docs
+│   ├── guides
+│   │   ├── GAMING.md
+│   │   └── INSTALLATION.md
+│   └── references
+│       ├── KEYBINDINGS.md
+│       └── PACKAGES.md
+├── icon.png
+├── outputs
+│   ├── workspace_output_1760645850_1370.txt
+│   ├── workspace_output_1760645857_1329.txt
+│   ├── workspace_output_1760645864_4091.txt
+│   ├── workspace_output_1760645870_4178.txt
+│   ├── workspace_output_1760645906_5692.txt
+│   ├── workspace_output_1760645924_689.txt
+│   ├── workspace_output_1760646511_3535.txt
+│   ├── workspace_output_1760646579_9387.txt
+│   ├── workspace_output_1760646621_1084.txt
+│   ├── workspace_output_1760646651_3192.txt
+│   ├── workspace_output_1760646891_5559.txt
+│   ├── workspace_output_1760647280_3377.txt
+│   └── workspace_output_1760647665_7419.txt
+├── package.list.txt
+├── scripts
+│   ├── install
+│   │   └── install.sh
+│   ├── jarvis
+│   │   ├── jarvis-gaming.sh
+│   │   ├── jarvis-startup.sh
+│   │   └── jarvis-streaming.sh
+│   ├── utils
+│   │   └── toggle-gaming-mode.sh
+│   └── webapps
+│       ├── webapp-chatgpt.sh
+│       ├── webapp-discord.sh
+│       ├── webapp-instagram.sh
+│       ├── webapp-twitch.sh
+│       └── webapp-youtube.sh
+├── themes
+├── todo.md
+└── welcome.txt
+
+27 directories, 44 files

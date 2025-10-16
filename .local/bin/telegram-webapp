@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Telegram Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://web.telegram.org" --class="telegram-webapp" --name="telegram-webapp" "$@"

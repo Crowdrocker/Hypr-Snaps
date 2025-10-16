@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Trello
+Comment=Trello Web Application
+Exec=chromium --app="https://trello.com" --class="trello-webapp" --name="trello-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=trello-webapp
+Keywords=Trello;webapp;

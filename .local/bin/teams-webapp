@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Teams Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://teams.microsoft.com" --class="teams-webapp" --name="teams-webapp" "$@"

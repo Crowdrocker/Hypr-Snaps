@@ -1,396 +1,397 @@
-# 🎮 WehttamSnaps Niri Workstation
+```
+╦ ╦┌─┐┬ ┬┌┬┐┌┬┐┌─┐┌┬┐╔═╗┌┐┌┌─┐┌─┐┌─┐
+║║║├┤ ├─┤ │  │ ├─┤│││╚═╗│││├─┤├─┘└─┐
+╚╩╝└─┘┴ ┴ ┴  ┴ ┴ ┴┴ ┴╚═╝┘└┘┴ ┴┴  └─┘
+```
 
-<div align="center">
+# 🎮 WehttamSnaps Hyprland Setup
 
-![WehttamSnaps Banner](assets/banner.png)
+> *A complete Arch Linux Hyprland configuration optimized for photography, gaming, and streaming*
 
-**A personalized Arch Linux workstation with Niri compositor**  
-*Built for photography, gaming, and streaming*
-
-[![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://archlinux.org/)
-[![Niri](https://img.shields.io/badge/Niri-Compositor-8A2BE2?style=for-the-badge)](https://github.com/YaLTeR/niri)
-[![License: MIT](https://img.shields.io/badge/License-MIT-cyan.svg?style=for-the-badge)](LICENSE)
-
-[Features](#-features) • [Installation](#-installation) • [Documentation](#-documentation) • [Community](#-community)
-
-</div>
+[![GitHub](https://img.shields.io/badge/GitHub-Crowdrocker-8A2BE2?style=for-the-badge&logo=github)](https://github.com/Crowdrocker/Hypr-Snaps)
+[![Twitch](https://img.shields.io/badge/Twitch-WehttamSnaps-9146FF?style=for-the-badge&logo=twitch)](https://twitch.tv/WehttamSnaps)
+[![YouTube](https://img.shields.io/badge/YouTube-WehttamSnaps-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com/@WehttamSnaps)
 
 ---
 
-## 📖 About
+## 📋 Table of Contents
 
-**WehttamSnaps** is a complete Arch Linux setup featuring the Niri scrollable-tiling compositor, custom Quickshell widgets, and full J.A.R.V.I.S. theme integration. Designed for a seamless workflow between photo editing, gaming, and streaming.
+- [Overview](#overview)
+- [Features](#features)
+- [System Specifications](#system-specifications)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Keybindings](#keybindings)
+- [Gaming Setup](#gaming-setup)
+- [Streaming Setup](#streaming-setup)
+- [Customization](#customization)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [Credits](#credits)
 
-**Created by:** Matthew (WehttamSnaps)  
-**Platforms:** [Twitch](https://twitch.tv/WehttamSnaps) • [YouTube](https://youtube.com/@WehttamSnaps) • [GitHub](https://github.com/Crowdrocker)
+---
+
+## 🌟 Overview
+
+**WehttamSnaps Hyprland Setup** is a meticulously crafted Arch Linux environment designed for content creators who demand both aesthetics and performance. This setup combines the power of Hyprland with the elegance of Noctalia Shell, creating a workflow optimized for:
+
+- 📸 **Photography & Photo Editing** (GIMP, Krita, Inkscape, Darktable)
+- 🎮 **Gaming** (Steam, Lutris, Heroic, with AMD optimizations)
+- 🎥 **Streaming** (OBS Studio with advanced audio routing)
+- 💼 **Content Creation** (Video editing, graphic design)
+
+### Design Philosophy
+
+This setup draws inspiration from two excellent configurations:
+- **JaKooLit** - Beautiful theming and visual aesthetics
+- **Omarchy** - Efficient workflow and functionality
+
+The result is a hybrid system that looks stunning while maintaining productivity-focused workflows.
 
 ---
 
 ## ✨ Features
 
-### 🎨 Visual Design
-- **Color Palette**: Violet-to-cyan gradient (#8A2BE2 → #00FFFF)
-- **Theme**: TokyoNight Dark with custom WehttamSnaps branding
-- **Animations**: Smooth, modern transitions throughout
-- **Compositor**: Niri with scrollable tiling workflow
+### 🎨 Visual & Theming
+- **Noctalia Shell** - Beautiful, minimal desktop shell for Wayland
+- **Material Design 3** color schemes with Matugen
+- **Custom color schemes** - Violet-to-cyan gradient (#8A2BE2 to #00FFFF)
+- **Dynamic wallpapers** with automatic color extraction
+- **Smooth animations** and transitions
+- **Custom SDDM theme** (SugarCandy) with matching aesthetics
 
-### 🤖 J.A.R.V.I.S. Integration
-- Custom startup/shutdown sounds
-- Event-driven audio notifications
-- Gaming mode announcements
-- System warning alerts
-- Streaming mode indicators
+### 🚀 Performance & Gaming
+- **AMD GPU optimizations** (RX 580)
+- **Gamemode** integration with automatic activation
+- **FSYNC & Vulkan** optimizations
+- **ZRAM** configuration for better memory management
+- **CoreCtrl & LACT** for GPU control and monitoring
+- **Fan control** setup for optimal cooling
 
-### 🎮 Gaming Optimizations
-- **Kernel**: linux-zen for gaming performance
-- **GPU**: AMD RX 580 optimizations (AMDGPU/RADV)
-- **Tools**: GameMode, MangoHud, CoreCtrl, LACT
-- **Memory**: ZRAM configuration for better performance
-- **Launch Options**: Pre-configured for 16 games
+### 🎵 Audio & Multimedia
+- **PipeWire** with advanced routing capabilities
+- **qpwgraph** for visual audio routing (like Voicemeter)
+- **EasyEffects** for audio processing
+- **J.A.R.V.I.S. sound pack** integration for system events
+- **OBS Studio** with VAAPI and VKCapture support
 
-### 🎵 Advanced Audio Routing
-- PipeWire-based virtual sink system
-- Voicemeter-style audio separation
-- qpwgraph visual routing
-- Per-application volume control
-- OBS streaming integration
+### 🛠️ Productivity
+- **Modular Hyprland configs** - Easy to navigate and customize
+- **Custom keybindings** with webapp support
+- **Quickshell widgets** for work and gaming
+- **Auto-generated keybind cheatsheet**
+- **Welcome app** with setup guidance
+- **Settings app** for easy configuration
 
-### 🛠️ Custom Quickshell Widgets
-- Work launcher (GIMP, Inkscape, Krita, Blender)
-- Gaming launcher (Steam, Lutris, Heroic, Discord)
-- J.A.R.V.I.S. status display
-- System monitor
-- Power menu with branding
-
-### 📦 Included Applications
-- **Terminal**: XFCE Terminal with TokyoNight theme
-- **Shell**: Zsh with Starship prompt
-- **File Manager**: Thunar with custom actions
-- **Launcher**: Fuzzel with WehttamSnaps styling
-- **Notifications**: Dunst with J.A.R.V.I.S. sounds
-- **Display Manager**: SDDM with SugarCandy theme
+### 🌐 WebApps Integration
+Pre-configured webapp launchers for:
+- YouTube
+- Twitch
+- Instagram
+- Discord Web
+- AI Chat interfaces
 
 ---
 
-## 🖥️ System Requirements
+## 💻 System Specifications
 
-### Minimum Specifications
-- **CPU**: Intel i5-4430 or equivalent
-- **GPU**: AMD RX 580 (or similar AMD GPU)
+### Hardware
+- **CPU**: Intel i5-4430 (Haswell, 4 cores/4 threads, 3.0-3.2 GHz)
+- **GPU**: AMD RX 580 (8GB VRAM)
 - **RAM**: 16GB DDR3
-- **Storage**: 120GB SSD for system + separate game drive
-- **Display**: 1080p monitor
+- **Storage**: 
+  - 120GB SSD (Arch Linux)
+  - 120GB SSD (Windows dual-boot)
+  - 1TB SSD (Games & Files - `/run/media/wehttamsnaps/LINUXDRIVE-1`)
+- **PSU**: 750W
+- **Monitor**: Single 1920x1080 (DP-3)
 
-### Recommended Specifications
-- **CPU**: Haswell or newer (4th gen Intel or Ryzen)
-- **GPU**: AMD RX 580 8GB or better
-- **RAM**: 16GB+ DDR4
-- **Storage**: 256GB+ NVMe SSD for system
+### System Info
+- **Username**: wehttamsnaps
+- **Hostname**: snaps-pc
+- **Timezone**: America/Chicago
+- **Locale**: en_US.UTF-8
 
 ---
 
-## 🚀 Installation
+## 📦 Installation
 
-### Quick Install (Recommended)
+### Prerequisites
+
+Before installing, ensure you have a working Arch Linux installation with internet connectivity.
+
+### Quick Install
 
 ```bash
 # Clone the repository
 git clone https://github.com/Crowdrocker/Hypr-Snaps.git
 cd Hypr-Snaps
 
-# Make the installer executable
-chmod +x install.sh
-
-# Run the interactive installer
-./install.sh
+# Run the installation script
+chmod +x scripts/install/install.sh
+./scripts/install/install.sh
 ```
-
-The installer will guide you through:
-1. Base system setup
-2. CachyOS repository installation
-3. linux-zen kernel installation
-4. Niri compositor setup
-5. Quickshell and Noctalia installation
-6. Gaming optimizations
-7. Audio routing configuration
-8. J.A.R.V.I.S. integration
-9. Theme installation
 
 ### Manual Installation
 
-See [INSTALL.md](docs/INSTALL.md) for detailed manual installation steps.
+For step-by-step manual installation, see [Installation Guide](docs/guides/INSTALLATION.md).
 
 ---
 
-## 📁 Repository Structure
+## ⚙️ Configuration
+
+### Directory Structure
 
 ```
-Hypr-Snaps/
-├── README.md                           # You are here
-├── install.sh                          # Interactive installer
-├── LICENSE                             # MIT License
-│
-├── configs/                            # Configuration files
-│   ├── niri/
-│   │   ├── config.kdl                 # Main Niri config
-│   │   ├── keybinds.kdl               # Keybindings
-│   │   ├── window-rules.kdl           # Window rules
-│   │   └── autostart.kdl              # Startup applications
-│   ├── quickshell/
-│   │   ├── shell.qml                  # Main shell config
-│   │   └── widgets/                   # Custom widgets
-│   │       ├── work-launcher.qml
-│   │       ├── game-launcher.qml
-│   │       ├── jarvis-status.qml
-│   │       └── templates/             # Widget templates
-│   ├── dunst/dunstrc                  # Notification config
-│   ├── fuzzel/fuzzel.ini              # Launcher config
-│   ├── kitty/kitty.conf               # Terminal config
-│   └── zsh/.zshrc                     # Zsh configuration
-│
-├── scripts/                            # Utility scripts
-│   ├── jarvis/                        # J.A.R.V.I.S. scripts
-│   │   ├── sound-manager.sh
-│   │   ├── startup.sh
-│   │   ├── shutdown.sh
-│   │   └── gaming-mode.sh
-│   ├── audio/                         # Audio routing scripts
-│   │   ├── qpwgraph-setup.sh
-│   │   └── virtual-sinks.sh
-│   ├── gaming/                        # Gaming utilities
-│   │   ├── gamemode-toggle.sh
-│   │   └── performance-mode.sh
-│   └── utilities/                     # General utilities
-│       ├── widget-manager.sh
-│       ├── backup-config.sh
-│       └── update-keybinds.sh
-│
-├── assets/                             # Media assets
-│   ├── jarvis-sounds/                 # J.A.R.V.I.S. audio files
-│   ├── wallpapers/                    # WehttamSnaps wallpapers
-│   ├── icons/                         # Custom icons
-│   └── logos/                         # Brand logos
-│
-├── themes/                             # Theme files
-│   ├── gtk/                           # GTK themes
-│   ├── qt/                            # Qt themes
-│   └── sddm/                          # SDDM theme
-│
-└── docs/                               # Documentation
-    ├── INSTALL.md                     # Installation guide
-    ├── KEYBINDS.md                    # Keybind reference
-    ├── QUICKSHELL-WIDGETS.md          # Widget creation guide
-    ├── AUDIO-SETUP.md                 # Audio routing guide
-    ├── GAMING-GUIDE.md                # Gaming optimization guide
-    ├── STEAM-LAUNCH-OPTIONS.md        # Steam launch options
-    └── TROUBLESHOOTING.md             # Common issues & fixes
+~/.config/
+├── hypr/                    # Hyprland configuration
+│   ├── hyprland.conf       # Main config (sources others)
+│   ├── keybinds.conf       # Keybindings
+│   ├── windowrules.conf    # Window rules
+│   ├── monitors.conf       # Monitor configuration
+│   ├── startup.conf        # Autostart applications
+│   └── env.conf            # Environment variables
+├── noctalia/               # Noctalia shell configuration
+├── ghostty/                # Ghostty terminal config
+├── fastfetch/              # Fastfetch with custom logo
+└── obs-studio/             # OBS configuration
 ```
+
+### Key Configuration Files
+
+- **Hyprland**: `~/.config/hypr/hyprland.conf`
+- **Noctalia**: `~/.config/noctalia/`
+- **Terminal**: `~/.config/ghostty/config`
+- **Shell**: `~/.zshrc` or `~/.bashrc`
+
+For detailed configuration options, see [Configuration Guide](docs/guides/CONFIGURATION.md).
 
 ---
 
-## 🎹 Default Keybindings
+## ⌨️ Keybindings
+
+### Core Shortcuts
 
 | Keybind | Action |
 |---------|--------|
-| `Mod + Return` | Open terminal |
-| `Mod + D` | Application launcher |
-| `Mod + Q` | Close window |
-| `Mod + F` | Fullscreen window |
-| `Mod + H/J/K/L` | Focus window (Vim-style) |
-| `Mod + Shift + H/J/K/L` | Move window |
-| `Mod + 1-9` | Switch to workspace |
-| `Mod + Shift + 1-9` | Move window to workspace |
-| `Mod + G` | Toggle gaming mode |
-| `Mod + A` | Open qpwgraph |
-| `Mod + Shift + A` | Open pavucontrol |
-| `Print` | Screenshot (area) |
-| `Mod + Print` | Screenshot (full) |
-| `Mod + Shift + E` | Exit Niri |
+| `SUPER + SPACE` | Application Launcher |
+| `SUPER + S` | Control Center |
+| `SUPER + COMMA` | Settings |
+| `SUPER + ENTER` | Terminal (Ghostty) |
+| `SUPER + B` | Browser |
+| `SUPER + Q` | Close Window |
+| `SUPER + L` | Lock Screen |
 
-**Full keybind list**: [KEYBINDS.md](docs/KEYBINDS.md)
+### Noctalia Shell
+
+| Keybind | Action |
+|---------|--------|
+| `SUPER + V` | Clipboard History |
+| `SUPER + C` | Calculator |
+| `SUPER + CTRL + SPACE` | Cycle Wallpapers |
+
+### Gaming & Streaming
+
+| Keybind | Action |
+|---------|--------|
+| `SUPER + G` | Gaming Mode Toggle |
+| `SUPER + SHIFT + S` | Screenshot |
+| `SUPER + SHIFT + R` | Screen Recording |
+
+### WebApps
+
+| Keybind | Action |
+|---------|--------|
+| `SUPER + W + Y` | YouTube |
+| `SUPER + W + T` | Twitch |
+| `SUPER + W + I` | Instagram |
+| `SUPER + W + D` | Discord Web |
+
+For complete keybinding reference, see [Keybindings Guide](docs/references/KEYBINDINGS.md).
 
 ---
 
 ## 🎮 Gaming Setup
 
-### Supported Games (Pre-configured)
+### Supported Games
+
+This setup includes optimized launch options for:
+
 - Call of Duty HQ
 - Cyberpunk 2077
 - Fallout 4
-- FarCry 5
+- Far Cry 5
 - Ghost Recon Breakpoint
 - Marvel's Avengers
 - Need for Speed Payback
 - Rise of the Tomb Raider
 - Shadow of the Tomb Raider
 - The First Descendant
-- The Division 1 & 2
+- Tom Clancy's The Division
+- Tom Clancy's The Division 2
 - Warframe
-- Watch Dogs 1, 2, & Legion
+- Watch Dogs series
 
-### Steam Launch Options Template
+### Gaming Optimizations
+
+- **Gamemode** - Automatic activation when games launch
+- **AMD GPU optimizations** - RADV drivers with ACO compiler
+- **Vulkan** - Latest Mesa drivers
+- **DXVK** - DirectX to Vulkan translation
+- **Proton GE** - Latest compatibility layer
+- **Steam Tinker Launch** - For modding support
+
+### Game Modding
+
+- **Nexus Mods App** - Official Linux app for mod management
+- **Steam Tinker Launch** - Vortex/MO2 integration
+- **Mod Organizer 2** - Via Wine/Proton
+
+For detailed gaming setup, see [Gaming Guide](docs/guides/GAMING.md).
+
+---
+
+## 🎥 Streaming Setup
+
+### OBS Studio Configuration
+
+- **VAAPI encoding** for AMD GPU
+- **VKCapture** for game capture
+- **PipeWire integration** for audio
+- **Advanced audio routing** with qpwgraph
+
+### Audio Routing
+
+This setup uses **qpwgraph** to create a Voicemeter-like experience on Linux:
+
+- Separate audio channels for:
+  - Game audio
+  - Browser audio
+  - Discord/communication
+  - Spotify/music
+  - Microphone input
+
+### Streaming Keybinds
+
+| Keybind | Action |
+|---------|--------|
+| `SUPER + SHIFT + O` | Start/Stop Streaming |
+| `SUPER + SHIFT + R` | Start/Stop Recording |
+| `SUPER + SHIFT + M` | Mute Microphone |
+
+For detailed streaming setup, see [Streaming Guide](docs/guides/STREAMING.md).
+
+---
+
+## 🎨 Customization
+
+### Color Schemes
+
+This setup uses Material Design 3 color schemes with Matugen. You can:
+
+1. **Use wallpaper colors** - Automatically extract colors from your wallpaper
+2. **Use predefined schemes** - Choose from built-in color schemes
+3. **Create custom schemes** - Define your own color palette
+
+### Creating Custom Widgets
+
+Noctalia Shell makes it easy to create custom widgets. See [Widget Creation Guide](docs/guides/WIDGETS.md).
+
+### Custom Matugen Templates
+
+Create templates for any application that supports theming. See [Matugen Templates Guide](docs/guides/MATUGEN.md).
+
+---
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+#### Hyprland won't start
 ```bash
-gamemoderun mangohud %command%
+# Check logs
+cat /tmp/hypr/$(ls -t /tmp/hypr/ | head -n 1)/hyprland.log
+
+# Verify installation
+hyprctl version
 ```
 
-See [STEAM-LAUNCH-OPTIONS.md](docs/STEAM-LAUNCH-OPTIONS.md) for game-specific configurations.
+#### Audio not working
+```bash
+# Restart PipeWire
+systemctl --user restart pipewire pipewire-pulse wireplumber
 
-### Performance Tools
-- **GameMode**: Automatic CPU priority for games
-- **MangoHud**: FPS and performance overlay
-- **CoreCtrl**: GPU control and profiles
-- **LACT**: AMD GPU monitoring
-- **ZRAM**: Compressed RAM for better memory management
+# Check audio devices
+wpctl status
+```
 
----
+#### Games not launching
+```bash
+# Check Proton version
+steam
 
-## 🎵 Audio Routing
+# Verify gamemode
+gamemoded -t
+```
 
-WehttamSnaps uses PipeWire with virtual sinks to replicate Voicemeter functionality:
-
-### Virtual Sinks
-- **Game Audio**: Separate game sound
-- **Discord Audio**: Voice chat isolation
-- **Browser Audio**: YouTube/Twitch streams
-- **Music Audio**: Spotify/music players
-
-### Tools
-- **qpwgraph**: Visual audio routing (like Voicemeter)
-- **pavucontrol**: Simple volume control
-- **EasyEffects**: Audio effects and processing
-
-**Complete guide**: [AUDIO-SETUP.md](docs/AUDIO-SETUP.md)
+For more troubleshooting, see [Troubleshooting Guide](docs/guides/TROUBLESHOOTING.md).
 
 ---
 
-## 🤖 J.A.R.V.I.S. Theme
+## 🤝 Contributing
 
-### Sound Events
-- **Startup**: "Allow me to introduce myself, I am JARVIS..."
-- **Shutdown**: "Shutting down. Have a good day, Matthew."
-- **Notification**: "Matthew, you have a notification."
-- **Warning**: "Warning: System temperature critical."
-- **Gaming Mode**: "Gaming mode activated. Maximum performance."
-- **Streaming Mode**: "Streaming systems online. All feeds operational."
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-### Installation
-1. Place sound files in `~/.config/jarvis-sounds/`
-2. Sounds automatically trigger on system events
-3. Integrate with Dunst, Niri, and custom scripts
+### How to Contribute
 
-**Sound files**: Created from [101soundboards.com](https://www.101soundboards.com/)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 📚 Documentation
+## 🙏 Credits
 
-- **[Installation Guide](docs/INSTALL.md)**: Detailed installation instructions
-- **[Keybinds Reference](docs/KEYBINDS.md)**: Complete keybinding list
-- **[Quickshell Widgets](docs/QUICKSHELL-WIDGETS.md)**: Creating custom widgets
-- **[Audio Setup](docs/AUDIO-SETUP.md)**: Advanced audio routing guide
-- **[Gaming Guide](docs/GAMING-GUIDE.md)**: Optimization and tweaks
-- **[Troubleshooting](docs/TROUBLESHOOTING.md)**: Common issues and fixes
+### Inspiration & Resources
+
+- **[JaKooLit](https://github.com/JaKooLit)** - Theming inspiration and visual design
+- **[Omarchy](https://github.com/omarchy)** - Workflow and functionality concepts
+- **[Noctalia](https://github.com/noctalia-dev/noctalia-shell)** - Beautiful Wayland shell
+- **[Hyprland](https://hyprland.org/)** - Amazing Wayland compositor
+
+### Tools & Technologies
+
+- Arch Linux
+- Hyprland
+- Noctalia Shell
+- Quickshell
+- PipeWire
+- Matugen
+- And many more amazing open-source projects!
 
 ---
 
-## 🤝 Community
+## 📄 License
 
-### Discord Server
-Join the WehttamSnaps community for help, gaming, and Linux discussion:
-**[https://discord.gg/nTaknDvdUA](https://discord.gg/nTaknDvdUA)**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-#### Channels
-- 🎮 Gaming (The Division, First Descendant, etc.)
-- 🐧 Linux Help & Tips
-- 📸 Photography Showcase
-- 🎥 Streaming Discussion
-- 💬 General Chat
+---
 
-### Social Media
+## 📞 Contact & Support
+
+- **GitHub**: [@Crowdrocker](https://github.com/Crowdrocker)
 - **Twitch**: [WehttamSnaps](https://twitch.tv/WehttamSnaps)
 - **YouTube**: [WehttamSnaps](https://youtube.com/@WehttamSnaps)
-- **GitHub**: [Crowdrocker](https://github.com/Crowdrocker)
-
----
-
-## 🌟 Credits & Inspiration
-
-### Projects
-- **[Niri](https://github.com/YaLTeR/niri)**: The amazing scrollable-tiling compositor
-- **[Quickshell](https://quickshell.outfoxxed.me/)**: Flexible Qt-based shell
-- **[Noctalia Shell](https://github.com/noctalia-dev/noctalia-shell)**: Base shell inspiration
-- **[Exo](https://github.com/debuggyo/Exo)**: Material 3 design reference
-- **[JaKooLit](https://github.com/JaKooLit)**: Hyprland dotfiles inspiration
-
-### Community
-- r/unixporn
-- r/archlinux
-- r/linux_gaming
-- Niri Discord community
-
----
-
-## 🛠️ Contributing
-
-Contributions are welcome! Whether it's:
-- 🐛 Bug reports
-- 💡 Feature suggestions
-- 📝 Documentation improvements
-- 🎨 Theme variations
-- 🔧 Script enhancements
-
-**See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.**
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-## 📊 System Information
-
-**My Current Setup:**
-- **CPU**: Intel i5-4430 (Haswell, 4C/4T @ 3.0-3.2 GHz)
-- **GPU**: AMD RX 580 8GB
-- **RAM**: 16GB DDR3
-- **Storage**: 
-  - 120GB SSD (Linux)
-  - 120GB SSD (Windows)
-  - 1TB SSD (Games/Files @ `/run/media/wehttamsnaps/LINUXDRIVE-1`)
-- **PSU**: 750W
-- **Display**: Single 1080p monitor
-
----
-
-## 🙏 Acknowledgments
-
-Special thanks to:
-- The Arch Linux community
-- Niri developer YaLTeR
-- Everyone who contributed ideas and feedback
-- My Discord community for testing and support
-
----
-
-## 📞 Support
-
-Having issues? Here's how to get help:
-
-1. **Check Documentation**: Most answers are in the [docs](docs/) folder
-2. **Search Issues**: Someone might have had the same problem
-3. **Join Discord**: Ask in the #linux-help channel
-4. **Open an Issue**: Provide system info and logs
+- **Discord**: [Join our community](https://discord.gg/nTaknDvdUA)
 
 ---
 
 <div align="center">
 
-**Made with 💜 by WehttamSnaps**
+**Made with ❤️ by Matthew (WehttamSnaps)**
 
-*"All systems operational. Ready for gaming and work."* - J.A.R.V.I.S.
-
-[⬆ Back to Top](#-wehttamsnaps-niri-workstation)
+*If you find this setup helpful, consider giving it a ⭐ on GitHub!*
 
 </div>

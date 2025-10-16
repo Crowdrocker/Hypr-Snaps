@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Spotify Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://open.spotify.com" --class="spotify-webapp" --name="spotify-webapp" "$@"

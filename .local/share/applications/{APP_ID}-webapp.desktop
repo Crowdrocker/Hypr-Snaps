@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=$APP_NAME
+Comment=$APP_NAME Web Application
+Exec=chromium --app="$APP_URL" --class="${APP_ID}-webapp" --name="${APP_ID}-webapp"
+Icon=${ICON_PATH:-web-browser}
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=${APP_ID}-webapp
+Keywords=$APP_NAME;webapp;
+EOL
+
+# Create executable script
+cat > "$HOME/.local/bin/${APP_ID}-webapp" << EOL
+#!/bin/bash
+# VOS Desktop - $APP_NAME Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="$APP_URL" --class="${APP_ID}-webapp" --name="${APP_ID}-webapp" "\$@"
+EOL
+
+chmod +x "$HOME/.local/bin/${APP_ID}-webapp"
+
+echo "Created web app: $APP_NAME"
+echo "Command: ${APP_ID}-webapp"
+echo "Desktop entry: ${APP_ID}-webapp.desktop"

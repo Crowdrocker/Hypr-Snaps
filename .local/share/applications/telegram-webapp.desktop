@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Telegram
+Comment=Telegram Web Application
+Exec=chromium --app="https://web.telegram.org" --class="telegram-webapp" --name="telegram-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=telegram-webapp
+Keywords=Telegram;webapp;

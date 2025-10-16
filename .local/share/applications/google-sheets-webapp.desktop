@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Google Sheets
+Comment=Google Sheets Web Application
+Exec=chromium --app="https://sheets.google.com" --class="google-sheets-webapp" --name="google-sheets-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=google-sheets-webapp
+Keywords=Google Sheets;webapp;

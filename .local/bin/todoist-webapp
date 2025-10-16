@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Todoist Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://todoist.com/app" --class="todoist-webapp" --name="todoist-webapp" "$@"

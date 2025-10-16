@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=YouTube Music
+Comment=YouTube Music Web Application
+Exec=chromium --app="https://music.youtube.com" --class="youtube-music-webapp" --name="youtube-music-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=youtube-music-webapp
+Keywords=YouTube Music;webapp;

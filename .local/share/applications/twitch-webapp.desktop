@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Twitch
+Comment=Twitch Web Application
+Exec=chromium --app="https://twitch.tv" --class="twitch-webapp" --name="twitch-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=twitch-webapp
+Keywords=Twitch;webapp;

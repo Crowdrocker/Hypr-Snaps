@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Salesforce Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://salesforce.com" --class="salesforce-webapp" --name="salesforce-webapp" "$@"

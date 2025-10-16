@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Figma
+Comment=Figma Web Application
+Exec=chromium --app="https://figma.com" --class="figma-webapp" --name="figma-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=figma-webapp
+Keywords=Figma;webapp;

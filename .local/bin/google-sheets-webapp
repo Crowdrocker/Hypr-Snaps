@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Google Sheets Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://sheets.google.com" --class="google-sheets-webapp" --name="google-sheets-webapp" "$@"

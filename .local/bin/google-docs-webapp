@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Google Docs Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://docs.google.com" --class="google-docs-webapp" --name="google-docs-webapp" "$@"

@@ -1,0 +1,11 @@
+#!/bin/bash
+# J.A.R.V.I.S. Shutdown Handler
+
+SOUND_DIR="$HOME/.config/sounds"
+
+if [ -f "$SOUND_DIR/jarvis-shutdown.mp3" ]; then
+    mpv --no-video "$SOUND_DIR/jarvis-shutdown.mp3"
+    sleep 2
+fi
+
+systemctl poweroff

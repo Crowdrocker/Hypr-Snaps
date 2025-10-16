@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Figma Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://figma.com" --class="figma-webapp" --name="figma-webapp" "$@"

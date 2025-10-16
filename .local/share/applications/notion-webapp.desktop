@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Notion
+Comment=Notion Web Application
+Exec=chromium --app="https://notion.so" --class="notion-webapp" --name="notion-webapp"
+Icon=web-browser
+Type=Application
+Categories=Network;WebBrowser;
+StartupWMClass=notion-webapp
+Keywords=Notion;webapp;

@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Notion Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://notion.so" --class="notion-webapp" --name="notion-webapp" "$@"

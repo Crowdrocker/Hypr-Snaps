@@ -1,0 +1,4 @@
+#!/bin/bash
+# VOS Desktop - Signal Web App
+# GitHub: https://github.com/Crowdrocker
+exec chromium --app="https://signal.org/install" --class="signal-webapp" --name="signal-webapp" "$@"
