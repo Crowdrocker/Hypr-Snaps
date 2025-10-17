@@ -12,7 +12,7 @@ Top-level structure
   - INSTALL.md
   - QUICKSTART.md
 - configs/
-  - hyprland/
+  - configs/
     - hypr.conf
     - conf.d/
       - 00-base.conf
