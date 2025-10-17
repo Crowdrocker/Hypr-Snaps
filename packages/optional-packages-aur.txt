@@ -1,0 +1,100 @@
+# Optional / AUR / large / niche packages. Install as needed.
+# Many items below are AUR (-bin / -git) or large desktop apps.
+# Install with an AUR helper (paru / yay) or individually.
+
+# Browsers & web
+firefox
+brave-bin        # AUR
+google-chrome    # AUR or external
+vivaldi          # AUR
+
+# Creative & Photography
+darktable
+rawtherapee
+gimp
+digikam
+hugin
+krita
+inkscape
+blender
+imagemagick
+gwenview
+nomacs
+qview
+ristretto
+
+# Office / Productivity / Messaging
+libreoffice-fresh
+thunderbird
+obsidian
+keepassxc
+signal-desktop
+telegram-desktop
+teams
+zoom
+
+# KDE / Theming (install if you run many KDE apps)
+kvantum
+kvantum-qt5
+breeze
+breeze-plus
+sddm
+sddm-sugar-candy-git   # AUR
+
+# Gaming extras & Proton
+lutris
+protonup-qt
+proton-ge-custom-bin   # AUR
+heroic                # AUR
+vkd3d-proton related packages
+
+# Audio pro / JACK / DSP
+qpwgraph              # (already in core if you use it)
+qjackctl
+carla
+easyeffects
+calf
+
+# Hardware control (hardware-specific — install only if needed)
+corectrl
+coolercontrol
+lact
+fancontrol
+thermald
+lm_sensors
+radeon-profile-daemon-git   # AUR
+
+# Utilities & niceties (optional)
+jetbrains-toolbox
+code
+docker
+docker-compose
+cmake
+python
+python-pip
+gparted
+timeshift
+snapper
+
+# Fonts & icons (optional)
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono
+ttf-fira-code
+papirus-icon-theme
+yaru-icon-theme
+
+# AUR helpers and meta
+paru
+yay-bin
+chaotic-keyring
+chaotic-mirrorlist
+
+# Experimental / personal packages from original list (install selectively)
+darkly-bin                # AUR
+github-desktop-plus-bin   # AUR
+webcord-bin               # AUR
+swww                      # wallpaper tool, optional
+wallust                   # optional wallpaper manager
+waybar                    # (omit if using Noctalia)
+waybar-module-pacman-updates-git  # AUR (only if waybar)
