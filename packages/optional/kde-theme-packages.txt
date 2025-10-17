@@ -1,0 +1,6 @@
+kvantum
+kvantum-qt5
+breeze
+breeze-plus
+sddm
+sddm-sugar-candy-git   # AUR

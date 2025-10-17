@@ -1,0 +1,8 @@
+libreoffice-fresh
+thunderbird
+obsidian
+keepassxc
+signal-desktop
+telegram-desktop
+teams
+zoom

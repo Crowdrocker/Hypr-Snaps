@@ -1,0 +1,13 @@
+darktable
+rawtherapee
+gimp
+digikam
+hugin
+krita
+inkscape
+blender
+imagemagick
+gwenview
+nomacs
+qview
+ristretto

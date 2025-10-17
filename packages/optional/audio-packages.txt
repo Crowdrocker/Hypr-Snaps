@@ -1,0 +1,6 @@
+# Advanced audio / JACK / DSP (qpwgraph can remain in core if you prefer)
+qpwgraph
+qjackctl
+carla
+easyeffects
+calf

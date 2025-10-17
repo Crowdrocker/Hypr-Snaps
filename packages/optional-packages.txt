@@ -1,0 +1,102 @@
+(These are grouped/annotated below in the annotated file; install as needed)
+
+A/V & multimedia:
+- pipewire-media-session (or wireplumber if preferred)
+- mpv-full-featured (if you need codecs)
+- vlc
+- obs-vkcapture
+- wf-recorder (already in core if you use recording a lot)
+- gstreamer-* plugins (gst-plugins-bad, gst-plugin-pipewire, gst-libav, gst-plugins-ugly)
+
+Browsers / store / GUI:
+- firefox
+- brave-bin (AUR)
+- google-chrome (AUR)
+- vivaldi (AUR)
+- brave-bin
+- aria2 / axel (download accelerators)
+- yay-bin (AUR helper) / paru (AUR helper)
+
+Development & editors:
+- code (VSCode)
+- jetbrains-toolbox
+- docker
+- docker-compose
+- cmake
+- python / python-pip
+- pip packages you need (opencv, watchdog, etc.)
+
+Photography / Design:
+- darktable
+- rawtherapee
+- gimp
+- digikam
+- hugin
+- krita
+- inkscape
+- blender
+- imagemagick
+- gthumb / nomacs / qview / ristretto
+
+Office / Productivity:
+- libreoffice-fresh
+- thunderbird
+- obsidian
+- keepassxc
+- signal-desktop
+- telegram-desktop
+- teams / zoom
+
+KDE/Plasma helpers & themes (optional unless you use KDE apps heavily):
+- kvantum
+- kvantum-qt5
+- breeze / breeze-plus
+- gnome-themes-extra / gtk themes you like
+- sddm / sddm-sugar-candy-git (display manager & theme)
+
+Gaming extras:
+- protonup-qt
+- proton-ge-custom-bin (AUR)
+- lutris
+- heroics / heroics-launcher (AUR)
+- steam-utils (swappiness/launchers)
+- vkd3d-proton-related packages if needed (AUR)
+- rocm stack (if doing compute with AMD; big & optional)
+
+Audio pro / routing:
+- qjackctl
+- calf / carla / jalv (for JACK/advanced)
+- easyeffects (for PipeWire equalizer/filters)
+- zita-resampler / ladspa plugins
+
+Utilities & niceties:
+- neovim-plugins / extensions
+- thefuck
+- tmux
+- tldr
+- tree
+- ncdu
+- gparted
+- timeshift / snapper
+- rsync / rclone / borg (backup)
+- wallpaper managers (swww, swaybg, wallust)
+- wallpaper picker UI (nwg-drawer / nwg-launchers)
+
+Fonts & icons (install what you want):
+- noto-fonts
+- noto-fonts-emoji
+- ttf-jetbrains-mono
+- ttf-fira-code
+- ttf-opensans
+- papirus-icon-theme
+- yaru-icon-theme
+
+System / low level (install only if you need):
+- thermald / lm_sensors / fancontrol / coolercontrol / corectrl / lact
+- vgtools for specific hardware
+- zfs / btrfs-progs / snapper (if using special FS)
+- cryptsetup (if encrypting disks)
+
+AUR & experimental:
+- chaotic-keyring / chaotic-mirrorlist (if using chaotic AUR)
+- any packages marked -git or -bin in your original list (choose carefully)

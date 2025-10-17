@@ -1,0 +1,6 @@
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono
+ttf-fira-code
+papirus-icon-theme
+yaru-icon-theme
