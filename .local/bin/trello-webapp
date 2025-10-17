@@ -1,4 +1,0 @@
-#!/bin/bash
-# VOS Desktop - Trello Web App
-# GitHub: https://github.com/Crowdrocker
-exec chromium --app="https://trello.com" --class="trello-webapp" --name="trello-webapp" "$@"

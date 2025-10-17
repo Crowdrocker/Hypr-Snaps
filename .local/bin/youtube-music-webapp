@@ -1,4 +1,0 @@
-#!/bin/bash
-# VOS Desktop - YouTube Music Web App
-# GitHub: https://github.com/Crowdrocker
-exec chromium --app="https://music.youtube.com" --class="youtube-music-webapp" --name="youtube-music-webapp" "$@"

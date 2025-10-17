@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Signal
-Comment=Signal Web Application
-Exec=chromium --app="https://signal.org/install" --class="signal-webapp" --name="signal-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=signal-webapp
-Keywords=Signal;webapp;

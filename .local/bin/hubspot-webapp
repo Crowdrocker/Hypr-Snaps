@@ -1,4 +1,0 @@
-#!/bin/bash
-# VOS Desktop - HubSpot Web App
-# GitHub: https://github.com/Crowdrocker
-exec chromium --app="https://app.hubspot.com" --class="hubspot-webapp" --name="hubspot-webapp" "$@"

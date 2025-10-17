@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Salesforce
-Comment=Salesforce Web Application
-Exec=chromium --app="https://salesforce.com" --class="salesforce-webapp" --name="salesforce-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=salesforce-webapp
-Keywords=Salesforce;webapp;

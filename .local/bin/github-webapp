@@ -1,4 +1,0 @@
-#!/bin/bash
-# VOS Desktop - GitHub Web App
-# GitHub: https://github.com/Crowdrocker
-exec chromium --app="https://github.com" --class="github-webapp" --name="github-webapp" "$@"

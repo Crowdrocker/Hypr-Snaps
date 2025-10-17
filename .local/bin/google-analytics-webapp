@@ -1,4 +1,0 @@
-#!/bin/bash
-# VOS Desktop - Google Analytics Web App
-# GitHub: https://github.com/Crowdrocker
-exec chromium --app="https://analytics.google.com" --class="google-analytics-webapp" --name="google-analytics-webapp" "$@"

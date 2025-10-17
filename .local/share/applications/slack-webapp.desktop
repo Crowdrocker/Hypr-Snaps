@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Slack
-Comment=Slack Web Application
-Exec=chromium --app="https://app.slack.com/client" --class="slack-webapp" --name="slack-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=slack-webapp
-Keywords=Slack;webapp;

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Canva
-Comment=Canva Web Application
-Exec=chromium --app="https://canva.com" --class="canva-webapp" --name="canva-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=canva-webapp
-Keywords=Canva;webapp;

@@ -1,4 +1,0 @@
-#!/bin/bash
-# VOS Desktop - Twitch Web App
-# GitHub: https://github.com/Crowdrocker
-exec chromium --app="https://twitch.tv" --class="twitch-webapp" --name="twitch-webapp" "$@"

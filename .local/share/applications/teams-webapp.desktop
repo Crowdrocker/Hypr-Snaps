@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Teams
-Comment=Teams Web Application
-Exec=chromium --app="https://teams.microsoft.com" --class="teams-webapp" --name="teams-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=teams-webapp
-Keywords=Teams;webapp;

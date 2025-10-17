@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Google Docs
-Comment=Google Docs Web Application
-Exec=chromium --app="https://docs.google.com" --class="google-docs-webapp" --name="google-docs-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=google-docs-webapp
-Keywords=Google Docs;webapp;

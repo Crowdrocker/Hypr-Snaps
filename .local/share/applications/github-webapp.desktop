@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=GitHub
-Comment=GitHub Web Application
-Exec=chromium --app="https://github.com" --class="github-webapp" --name="github-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=github-webapp
-Keywords=GitHub;webapp;

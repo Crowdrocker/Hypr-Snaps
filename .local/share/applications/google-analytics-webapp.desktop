@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Google Analytics
-Comment=Google Analytics Web Application
-Exec=chromium --app="https://analytics.google.com" --class="google-analytics-webapp" --name="google-analytics-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=google-analytics-webapp
-Keywords=Google Analytics;webapp;

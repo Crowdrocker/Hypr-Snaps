@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=VOS Desktop Environment
-Comment=VOS Desktop Environment Configuration
-Exec=code ~/.config/vos/
-Icon=vos-logo
-Type=Application
-Categories=Settings;
-Keywords=vos;desktop;configuration;

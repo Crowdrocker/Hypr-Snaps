@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Todoist
-Comment=Todoist Web Application
-Exec=chromium --app="https://todoist.com/app" --class="todoist-webapp" --name="todoist-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=todoist-webapp
-Keywords=Todoist;webapp;

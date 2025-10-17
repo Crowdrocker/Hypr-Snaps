@@ -1,4 +1,0 @@
-#!/bin/bash
-# VOS Desktop - Discord Web App
-# GitHub: https://github.com/Crowdrocker
-exec chromium --app="https://discord.com/app" --class="discord-webapp" --name="discord-webapp" "$@"

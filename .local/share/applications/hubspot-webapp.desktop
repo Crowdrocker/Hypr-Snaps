@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=HubSpot
-Comment=HubSpot Web Application
-Exec=chromium --app="https://app.hubspot.com" --class="hubspot-webapp" --name="hubspot-webapp"
-Icon=web-browser
-Type=Application
-Categories=Network;WebBrowser;
-StartupWMClass=hubspot-webapp
-Keywords=HubSpot;webapp;
