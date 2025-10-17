@@ -1,0 +1,10 @@
+jetbrains-toolbox
+code
+docker
+docker-compose
+cmake
+python
+python-pip
+gparted
+timeshift
+snapper

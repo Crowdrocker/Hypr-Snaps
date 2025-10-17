@@ -1,0 +1,8 @@
+# Hardware & thermal / fan control — install only if it matches your hardware
+corectrl
+coolercontrol
+lact
+fancontrol
+thermald
+lm_sensors
+radeon-profile-daemon-git   # AUR

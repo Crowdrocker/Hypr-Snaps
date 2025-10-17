@@ -1,0 +1,4 @@
+firefox
+brave-bin        # AUR
+google-chrome    # AUR or external
+vivaldi          # AUR
