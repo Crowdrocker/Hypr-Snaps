@@ -1,0 +1,33 @@
+# WehttamSnaps Hyprland Setup - Photography Packages
+# Tools for photography and image editing
+# GitHub: https://github.com/Crowdrocker
+
+# === RAW PROCESSING ===
+darktable
+rawtherapee
+
+# === IMAGE EDITING ===
+gimp
+krita
+inkscape
+
+# === PHOTO MANAGEMENT ===
+digikam
+shotwell
+
+# === IMAGE VIEWERS ===
+nomacs
+gwenview
+loupe
+qview
+
+# === BATCH PROCESSING ===
+imagemagick
+hugin
+
+# === COLOR MANAGEMENT ===
+colord
+argyllcms
+
+# === METADATA ===
+exiftool

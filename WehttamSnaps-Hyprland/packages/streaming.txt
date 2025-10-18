@@ -1,0 +1,42 @@
+# WehttamSnaps Hyprland Setup - Streaming Packages
+# Streaming and content creation tools
+# GitHub: https://github.com/Crowdrocker
+
+# === OBS STUDIO ===
+obs-studio
+obs-vaapi
+obs-vkcapture
+wlrobs-hg
+
+# === VIDEO EDITING ===
+kdenlive
+openshot
+handbrake
+
+# === AUDIO PRODUCTION ===
+ardour
+audacity
+calf
+carla
+lsp-plugins
+
+# === SCREEN RECORDING ===
+gpu-screen-recorder
+wf-recorder
+
+# === AUDIO VISUALIZER ===
+cava
+
+# === MEDIA PLAYERS ===
+mpv
+mpv-mpris
+vlc
+celluloid
+
+# === CHAT & COMMUNICATION ===
+discord
+legcord-bin
+telegram-desktop
+
+# === STREAMING PLATFORMS ===
+# Note: Use webapps for Twitch, YouTube

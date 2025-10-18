@@ -1,0 +1,73 @@
+# WehttamSnaps Hyprland Setup - Optional Packages
+# Additional tools for enhanced experience
+# GitHub: https://github.com/Crowdrocker
+
+# === BROWSERS ===
+firefox
+chromium
+brave-bin
+zen-browser-bin
+
+# === DEVELOPMENT ===
+code
+neovim
+github-desktop-plus-bin
+docker
+docker-compose
+
+# === OFFICE ===
+libreoffice-fresh
+obsidian
+keepassxc
+
+# === SYSTEM TOOLS ===
+gparted
+gnome-disk-utility
+timeshift
+snapper
+
+# === FILE SYNC ===
+rclone
+syncthing
+
+# === TERMINALS (Additional) ===
+kitty
+alacritty
+foot
+
+# === THEMES ===
+tokyonight-gtk-theme-git
+sweet-gtk-theme
+papirus-icon-theme
+bibata-cursor-theme
+
+# === UTILITIES ===
+yad
+rofi-bluetooth-git
+nwg-look
+nwg-displays
+
+# === PERFORMANCE ===
+auto-cpufreq
+thermald
+preload
+zram-generator
+
+# === MONITORING ===
+mission-center
+glances
+
+# === FILE MANAGERS (Additional) ===
+dolphin
+nautilus
+ranger
+yazi
+
+# === MEDIA ===
+spotify-launcher
+yt-dlp
+
+# === VIRTUALIZATION ===
+# qemu-full
+# virt-manager
+# libvirt

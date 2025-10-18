@@ -1,5 +1,0 @@
-lutris
-protonup-qt
-proton-ge-custom-bin   # AUR
-heroic                 # AUR
-vkd3d-proton           # (or vkd3d-proton-related packages as needed)

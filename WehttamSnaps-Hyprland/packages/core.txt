@@ -1,0 +1,153 @@
+# WehttamSnaps Hyprland Setup - Core Packages
+# Essential packages required for basic functionality
+# GitHub: https://github.com/Crowdrocker
+
+# === BASE SYSTEM ===
+base
+base-devel
+linux-firmware
+linux-cachyos-lts
+linux-cachyos-lts-headers
+
+# === BOOT & SYSTEM ===
+grub
+efibootmgr
+os-prober
+mkinitcpio
+
+# === HYPRLAND CORE ===
+hyprland
+hyprpaper
+hyprshot
+hyprpicker
+hyprlock
+hyprpolkitagent
+hypridle
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+
+# === NOCTALIA SHELL ===
+noctalia-shell
+quickshell
+
+# === TERMINAL ===
+ghostty
+
+# === AUDIO ===
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-jack
+pipewire-pulse
+wireplumber
+pavucontrol
+qpwgraph
+
+# === NETWORKING ===
+networkmanager
+network-manager-applet
+bluez
+bluez-utils
+blueman
+
+# === DISPLAY & GPU (AMD RX 580) ===
+mesa
+vulkan-radeon
+lib32-vulkan-radeon
+xf86-video-amdgpu
+amdvlk
+lib32-amdvlk
+
+# === FONTS ===
+ttf-jetbrains-mono-nerd
+ttf-firacode-nerd
+ttf-roboto
+inter-font
+noto-fonts
+noto-fonts-emoji
+ttf-font-awesome
+
+# === FILE MANAGEMENT ===
+thunar
+thunar-archive-plugin
+thunar-volman
+gvfs
+gvfs-mtp
+
+# === UTILITIES ===
+git
+wget
+curl
+unzip
+zip
+rsync
+tree
+htop
+btop
+fastfetch
+
+# === THEMING ===
+gtk-engine-murrine
+kvantum
+lxappearance
+qt5ct
+qt6ct
+
+# === LAUNCHER & MENUS ===
+rofi
+fuzzel
+wofi
+
+# === NOTIFICATIONS ===
+dunst
+libnotify
+
+# === SCREENSHOTS ===
+grim
+slurp
+swappy
+
+# === WALLPAPER ===
+swww
+waypaper
+
+# === CLIPBOARD ===
+cliphist
+wl-clip-persist
+
+# === BRIGHTNESS ===
+brightnessctl
+light
+
+# === POWER MANAGEMENT ===
+power-profiles-daemon
+
+# === POLKIT ===
+polkit-gnome
+
+# === ARCHIVE SUPPORT ===
+unrar
+unarchiver
+p7zip
+
+# === SYSTEM MONITORING ===
+nvtop
+radeontop
+
+# === COLOR GENERATION ===
+matugen-git
+python-pywal
+
+# === SHELL ===
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+starship
+
+# === TEXT EDITOR ===
+neovim
+nano
+
+# === PACKAGE MANAGEMENT ===
+paru
+reflector

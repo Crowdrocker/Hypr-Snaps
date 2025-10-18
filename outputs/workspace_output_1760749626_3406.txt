@@ -1,0 +1,32 @@
+WehttamSnaps-Hyprland/
+├── README.md
+├── assets
+│   ├── images
+│   ├── themes
+│   └── wallpapers
+├── configs
+│   ├── hyprland
+│   │   ├── conf.d
+│   │   └── hyprland.conf
+│   ├── noctalia
+│   ├── scripts
+│   │   ├── keyhints.sh
+│   │   ├── webapps
+│   │   └── welcome.py
+│   ├── sounds
+│   └── webapps
+├── docs
+│   ├── INSTALL.md
+│   ├── KEYBINDINGS.md
+│   ├── NOCTALIA.md
+│   └── QUICKSTART.md
+├── logo.txt
+├── packages
+│   ├── core.txt
+│   ├── gaming.txt
+│   ├── optional.txt
+│   ├── photography.txt
+│   └── streaming.txt
+└── tools
+
+16 directories, 14 files

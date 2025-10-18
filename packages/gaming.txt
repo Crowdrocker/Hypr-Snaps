@@ -1,0 +1,33 @@
+# WehttamSnaps Hyprland Setup - Gaming Packages
+# Gaming and performance optimization
+# GitHub: https://github.com/Crowdrocker
+
+# === GAMING CORE ===
+steam
+lutris
+gamemode
+gamescope
+mangohud
+
+# === WINE & COMPATIBILITY ===
+wine-staging
+winetricks
+dxvk-bin
+vkd3d
+lib32-vkd3d
+
+# === PROTON ===
+proton-ge-custom-bin
+protonup-qt
+
+# === PERFORMANCE ===
+lib32-gamemode
+lib32-pipewire-jack
+
+# === CONTROLLERS ===
+antimicrox
+
+# === EMULATION (Optional) ===
+# retroarch
+# dolphin-emu
+# pcsx2

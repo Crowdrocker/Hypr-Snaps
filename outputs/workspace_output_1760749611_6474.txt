@@ -1,0 +1,16 @@
+./docs/INSTALL.md
+./docs/KEYBINDINGS.md
+./docs/NOCTALIA.md
+./docs/QUICKSTART.md
+./configs/hyprland/conf.d/00-monitors.conf
+./configs/hyprland/conf.d/01-environment.conf
+./configs/hyprland/conf.d/02-startup.conf
+./configs/hyprland/conf.d/20-keybinds.conf
+./configs/hyprland/hyprland.conf
+./packages/core.txt
+./packages/photography.txt
+./packages/gaming.txt
+./packages/streaming.txt
+./packages/optional.txt
+./logo.txt
+./README.md
